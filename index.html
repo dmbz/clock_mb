@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/RejEstilos.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.tzineClock.css" />
+  
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.tzineClock.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery.timer.js"></script>
+  <script type="text/javascript" src="js/demo.js"></script>
+   
+</head>
+<body>
+
+<div data-role="page" id="reloj">
+<div data-role="header" style="overflow:hidden;">
+    <h1>Clock MB 0.4b</h1>
+    <a href="#info" data-rel="popup" class="ui-btn-right" data-icon="info" data-theme="b" data-inline="true" data-transition="pop">Info</a>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#cronometro" data-theme="c">Cronometro</a></li>
+            <li><a href="tempo.html" data-ajax="false" data-theme="c">Temporizador</a></li>
+        </ul>
+    </div>
+</div>
+    <div data-role="content">
+    <div id="fancyClock"></div>
+    <div data-role="popup" id="info">
+    <p>Versión: 0.4b</p>
+    <p>Desarrollador: Daniel Mendoza</p>
+    <p>Twitter: <a href="http://twitter.com/Zonix_">@Zonix_</a></p>
+    <p>Contacto: dmbz@bk.ru</p>
+    <p>Agradecimientos: Alexa</p>
+    </div>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-role="button" data-url="https://github.com/dmbz" data-via="Zonix_" data-lang="es" data-count="none" data-hashtags="FirefoOS">Twittear</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+    </div>
+    
+<div data-role="page" id="cronometro">
+
+	<div data-role="header">
+        <a href="#reloj" data-icon="arrow-l">Atras</a>
+		<h1>Cronometro</h1>
+	</div>
+
+	<div data-role="content">
+        <span style="font-size:40px" id="stopwatch">00:00:00</span>
+        <p>
+        <div data-role="controlgroup" data-type="horizontal">
+        <input type='button' value='Play/Pause' onclick='Example1.Timer.toggle();' />
+        <input type='button' value='Stop/Reset' onclick='Example1.resetStopwatch();' />
+        </div>
+	</div>
+    
+    
+<div data-role="page" id="CA">
+
+	<div data-role="header">
+        <a href="#reloj" data-icon="arrow-l">Atras</a>
+		<h1>Cronometro</h1>
+	</div>
+
+<!-- Start of second page -->
+<div data-role="page" id="CA">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		<p><a href="#foo">Back to foo</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div>
+</body>
+</html>
