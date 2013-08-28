@@ -1,0 +1,16 @@
+{
+  "version": "0.4b",
+  "name": "Clock MB",
+  "description": "Reloj",
+  "launch_path": "/index.html",
+  "icons": {
+    "32": "/images/icon-32.png",
+    "64": "/images/icon-64.png",
+    "128": "/images/icon-128.png"
+  },
+  "developer": {
+    "name": "Daniel Mendoza",
+    "url": "https://github.com/dmbz"
+  },
+  "default_locale": "es"
+}
